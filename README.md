@@ -1,79 +1,45 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Movie App
 
-# Getting Started
+This project is a movie application developed using React Native. It fetches movie data from The Movie Database (TMDB) API, allowing users to view movie details, add to favorites, view favorite movies, and search for movies.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- Fetch movie data from TMDB API.
+- Seamless navigation between screens.
+- Marking favorite movies and viewing them.
+- Movie search functionality.
+- Modular API management using Redux Toolkit.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Getting Started
 
-To start Metro, run the following command from the _root_ of your React Native project:
+To run the project locally, follow the steps below.
 
-```bash
-# using npm
-npm start
+### Requirements
 
-# OR using Yarn
-yarn start
-```
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-## Step 2: Start your Application
+### Installation
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- Clone the project files to your computer.
 
-### For Android
+  ```bash
+  git clone https://github.com/your_username/movie-app.git
+  ```
 
-```bash
-# using npm
-npm run android
+1. Navigate to the project directory and install dependencies.
 
-# OR using Yarn
-yarn android
-```
+cd movie-app
+npm install
 
-### For iOS
+2. Update your TMDB API key in the src/config.js file.
 
-```bash
-# using npm
-npm run ios
+// src/config.js
 
-# OR using Yarn
-yarn ios
-```
+export const TMDB_API_KEY = 'your_tmdb_api_key';
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+3. Start the application.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+npm start or yarn start
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+![](screen.gif)
